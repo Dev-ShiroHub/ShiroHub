@@ -101,7 +101,7 @@ local inputLabel = Instance.new("TextLabel")
 inputLabel.Name = "InputLabel"
 inputLabel.Size = UDim2.new(0.4, 0, 1, 0)
 inputLabel.Position = UDim2.new(0, 10, 0, 0)
-inputLabel.Text = "tst 2"
+inputLabel.Text = "Put Speed"
 inputLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 inputLabel.TextSize = 14
 inputLabel.Font = Enum.Font.Gotham
@@ -114,7 +114,7 @@ speedInputBox.Name = "SpeedInputBox"
 speedInputBox.Size = UDim2.new(0.6, -20, 0.7, 0)
 speedInputBox.Position = UDim2.new(0.4, 0, 0.15, 0)
 speedInputBox.Text = "50"
-speedInputBox.PlaceholderText = "Input Speed Here!"
+speedInputBox.PlaceholderText = ""
 speedInputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 speedInputBox.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
 speedInputBox.BorderSizePixel = 0
@@ -126,7 +126,7 @@ local setSpeedButton = Instance.new("TextButton")
 setSpeedButton.Name = "SetSpeedButton"
 setSpeedButton.Size = UDim2.new(1, -20, 0, 45)
 setSpeedButton.Position = UDim2.new(0, 10, 0, 170)
-setSpeedButton.Text = "tst"
+setSpeedButton.Text = "Set Speed"
 setSpeedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 setSpeedButton.TextSize = 16
 setSpeedButton.Font = Enum.Font.GothamBold
@@ -438,7 +438,7 @@ setSpeedButton.MouseLeave:Connect(function()
 end)
 
 task.wait(1)
-showNotification("Welcome To Speed GUI Control By: TenshiDev.", Color3.fromRGB(40, 40, 60))
+showNotification("Shiro Hub | Speed GUI Successed Loaded.", Color3.fromRGB(40, 40, 60))
 
-print("Speed Control GUI | Shiro Hub success loaded.")
-print("Shortcuts From this Speed Gui ‹ Shortcuts: Ctrl+S (Toggle Menu) | Ctrl+R (Reset) | Enter (Apply)")
+task.wait(1)
+showNotification("Shortcuts From this Speed Gui ‹ Shortcuts: Ctrl+S (Toggle Menu) | Ctrl+R (Reset) | Enter (Apply)", Color3.fromRGB(40, 40, 60))
