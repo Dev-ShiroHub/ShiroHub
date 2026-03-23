@@ -500,4 +500,3 @@ showNotification("âš¡ Nháº¥n nÃºt âš¡ Ä‘á»ƒ má»Ÿ menu Speed 
 
 print("Speed Control GUI | Shiro Hub success loaded.")
 print("Shortcuts From this Speed Gui ‹ Shortcuts: Ctrl+S (Toggle Menu) | Ctrl+R (Reset) | Enter (Apply)")
-end
