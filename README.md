@@ -3,7 +3,8 @@
 - the script is safe, **KEYLESS** & **FREE** for everyone. made for everyone to get the most out of it
 
 ## Working On:
-- Blox Fruits Only.
+- Blox Fruits
+- Universal
 
 
 ### Local's Load/Run:
