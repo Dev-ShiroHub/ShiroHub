@@ -143,8 +143,8 @@ v110:CreateButton({
         Callback = function()
             u178:Destroy()
         end
-    end,
-)}
+    end
+})
 
 -- Command /size
 v002.Chatted:Connect(function(msg)
