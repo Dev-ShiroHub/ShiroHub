@@ -136,6 +136,16 @@ v220:CreateButton({ Name = "Hop to Pro Players", Callback = function() u_hop_v9(
 
 --- ### CORE LOGIC SYSTEMS ### ---
 
+local v646 = v556:CreateTab("Misc", 4483362458)
+
+v110:CreateButton({
+        Name = "Destroy Windows",
+        Callback = function()
+            u178:Destroy()
+        end
+    end,
+)}
+
 -- Command /size
 v002.Chatted:Connect(function(msg)
     local args = msg:split(" ")
