@@ -153,6 +153,11 @@ Window:AddToggle({ text = "Auto OG", state = false, callback = function(v) Start
 
 -- NEW DIVINE TOGGLE (added exactly like the others)
 Window:AddToggle({ text = "Auto Divine", state = false, callback = function(v) StartAuto("divine", v) end })
+Window:AddToggle({ text = "Auto Common", state = false, callback = function(v) StartAuto("common", v) end })
+Window:AddToggle({ text = "Auto Rare", state = false, callback = function(v) StartAuto("rare", v) end })
+Window:AddToggle({ text = "Auto Epic", state = false, callback = function(v) StartAuto("epic", v) end })
+Window:AddToggle({ text = "Auto Legend", state = false, callback = function(v) StartAuto("legendary", v) end })
+Window:AddToggle({ text = "Auto Mythic", state = false, callback = function(v) StartAuto("mythic", v) end })
 
 Window:AddLabel({text = "Made by TenshiDev"})
 library:Init()
