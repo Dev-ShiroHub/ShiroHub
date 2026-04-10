@@ -1,7 +1,6 @@
-local library = loadstring(game:HttpGet(""))()
-local Window = library:CreateWindow("Jump Steal LuckyBlock")
+local ui-library = loadstring(game:HttpGet("https://github.com/Dev-ShiroHub/ShiroHub/raw/refs/heads/main/ShiroHub-Library/ShiroHubLib2.luau"))()
+local Window = library:CreateWindow("Shiro Hub")
 
--- Services
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -9,14 +8,11 @@ local player = Players.LocalPlayer
 local safeZoneCFrame = CFrame.new(196.59, 10.68, 282.22)
 local friendsFolder = workspace:WaitForChild("Live"):WaitForChild("Friends")
 
--- ULTRA FAST tween
 local tweenInfoFast = TweenInfo.new(0.45, Enum.EasingStyle.Linear)
 
--- Global lock
 local isStealing = false
 local stealCooldowns = {}
 
--- FIXED & FAST steal function (unchanged)
 local function TryStealFriend(friend, rarityText, rarityKey)
     if isStealing then return false end
     isStealing = true
@@ -66,7 +62,6 @@ local function TryStealFriend(friend, rarityText, rarityKey)
     return true
 end
 
--- Auto steal loop (unchanged)
 local autoLoops = {}
 local function StartAuto(rarityKeyword, toggleState)
     local key = rarityKeyword:lower()
@@ -98,8 +93,6 @@ local function StartAuto(rarityKeyword, toggleState)
     end)
 end
 
--- === NEW TOGGLES (directly under the rare toggles) ===
--- Upgrade Jump +10 (loops every 2s)
 local upgradeLoop = nil
 Window:AddToggle({
     text = "Buy Jump +10",
@@ -120,9 +113,8 @@ Window:AddToggle({
             end)
         end
     end
-})
+}
 
--- Auto Rebirth (loops every 2s)
 local rebirthLoop = nil
 Window:AddToggle({
     text = "Auto Rebirth",
@@ -145,15 +137,12 @@ Window:AddToggle({
     end
 })
 
--- Old steal toggles + NEW Divine
 Window:AddToggle({ text = "Auto Secret", state = false, callback = function(v) StartAuto("secret", v) end })
 Window:AddToggle({ text = "Auto God", state = false, callback = function(v) StartAuto("brainrot god", v) end })
 Window:AddToggle({ text = "Auto Exclusive", state = false, callback = function(v) StartAuto("exclusive", v) end })
 Window:AddToggle({ text = "Auto OG", state = false, callback = function(v) StartAuto("og", v) end })
-
--- NEW DIVINE TOGGLE (added exactly like the others)
 Window:AddToggle({ text = "Auto Divine", state = false, callback = function(v) StartAuto("divine", v) end })
 
-Window:AddLabel({text = "Made by Zappisme"})
-library:Init()
-print("✅ Zaporium GUI Loaded - Upgrades + Rebirth + Auto Divine added!")
+Window:AddLabel({text = "Made by TenshiDev"})
+ui-library:Init()
+print("✅ TenshiDev GUI Loaded - Upgrades + Rebirth + Auto Divine added!")
