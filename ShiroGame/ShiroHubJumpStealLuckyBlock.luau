@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://github.com/Dev-ShiroHub/ShiroHub/raw/refs/heads/main/ShiroHub-Library/ShiroHubLib2.luau"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-ShiroHub/ShiroHub/refs/heads/main/ShiroHub-Library/ShiroHubLib2.luau"))()
 local Window = library:CreateWindow("Shiro Hub")
 
 local TweenService = game:GetService("TweenService")
