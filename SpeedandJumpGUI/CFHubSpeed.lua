@@ -84,13 +84,13 @@ closeButton.MouseButton1Click:Connect(function()
 end)
 speedButton.MouseButton1Click:Connect(applySpeed)
 
-StarterGui:SetCore("Notification", {
+StarterGui:SetCore("SendNotification", {
     Title = "CF Hub", 
     Text = "Thanks For use The Script!", 
     Duration = 5
   }) 
 
-StarterGui:SetCore("Notification", {
+StarterGui:SetCore("SendNotification", {
     Title = "CF Hub", 
     Text = "By: TenshiDev",
     Duration = 7
